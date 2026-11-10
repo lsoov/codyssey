@@ -124,12 +124,25 @@ EXPOSE 80
 docker build -t my-custom-web .
 docker run -d -p 8080:80 --name my-vol-web my-custom-web
 ```
-![웹 서버 실행 화면](./screenshot.png)
+<details>
+<summary>👉 여기를 클릭하면 스크린샷이 나타납니다!</summary>
+
+![결과화면](./my-web-server/screenshot.png)
+
+</details>
+
 ### 4.5 바인드 마운트 검증
 ```PowerShell
 docker run -d -p 8081:80 -v ${PWD}:/usr/share/nginx/html --name bind-test nginx:alpine
 ```
-- **검증**: 로컬의 index.html 문서 수정 시 컨테이너 재시작 없이 웹 브라우저(http://localhost:8081)에 즉시 변경사항 반영 확인. ![바인드 마운트 결과](./result.png)
+- **검증**: 로컬의 index.html 문서 수정 시 컨테이너 재시작 없이 웹 브라우저(http://localhost:8081)에 즉시 변경사항 반영 확인. 
+<details>
+<summary>👉 여기를 클릭하면 스크린샷이 나타납니다!</summary>
+
+![결과화면](./my-web-server/result.png)
+
+</details>
+
 ### 4.6 Docker 볼륨 영속성 검증 로그
 ```PowerShell
 PS C:\Users\lsoov\mission\my-web-server> docker volume create my-db-vol
