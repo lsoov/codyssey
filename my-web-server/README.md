@@ -127,7 +127,7 @@ docker run -d -p 8080:80 --name my-vol-web my-custom-web
 <details>
 <summary>👉 여기를 클릭하면 스크린샷이 나타납니다!</summary>
 
-![결과화면](./my-web-server/screenshot.png)
+![결과화면](./screenshot.png)
 
 </details>
 
@@ -139,7 +139,7 @@ docker run -d -p 8081:80 -v ${PWD}:/usr/share/nginx/html --name bind-test nginx:
 <details>
 <summary>👉 여기를 클릭하면 스크린샷이 나타납니다!</summary>
 
-![결과화면](./my-web-server/result.png)
+![결과화면](./result.png)
 
 </details>
 
